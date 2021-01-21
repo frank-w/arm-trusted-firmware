@@ -57,5 +57,6 @@ int parse_gpt_entry(gpt_entry_t *gpt_entry, partition_entry_t *entry)
 	entry->length = (uint64_t)(gpt_entry->last_lba -
 				   gpt_entry->first_lba + 1) *
 			PLAT_PARTITION_BLOCK_SIZE;
+	NOTICE("GPT %s > start:%lld length:%lld byte\n",entry->name,entry->start,entry->length);
 	return 0;
 }
