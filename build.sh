@@ -45,7 +45,7 @@ case $1 in
 		if [[ -e u-boot.bin ]];then
 			make distclean
 			set -x
-			make PLAT=mt7622 BL33=u-boot.bin BOOT_DEVICE=$DEVICE all fip
+			make PLAT=mt7622 BL33=u-boot.bin DDR3_FLYBY=1 BOOT_DEVICE=$DEVICE all fip
 			set +x
 		else
 			echo "u-boot.bin missing!"
