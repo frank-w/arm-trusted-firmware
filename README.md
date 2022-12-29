@@ -1,3 +1,7 @@
+This Repo is deprecated, support is integrated into my uboot-repo
+
+https://github.com/frank-w/u-boot/tree/mtk-atf
+
 # ATF for Bananapi-R64
 
 <img src="bpi-r64-storage.svg">
